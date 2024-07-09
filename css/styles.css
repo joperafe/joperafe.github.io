@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     font-size: 16px;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 .container {
@@ -19,7 +20,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #4CAF50;
     color: #fff;
     padding: 1em 0;
     text-align: center;
@@ -51,7 +52,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #555;
+    background: #388E3C;
 }
 
 main {
@@ -68,7 +69,7 @@ section {
 
 h2 {
     text-align: center;
-    color: #333;
+    color: #4CAF50;
     margin-bottom: 1em;
 }
 
@@ -92,13 +93,13 @@ h2 {
 }
 
 .project a {
-    color: #1e90ff;
+    color: #1E88E5;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .project a:hover {
-    color: #004080;
+    color: #0D47A1;
 }
 
 footer {
