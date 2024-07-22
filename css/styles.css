@@ -1,4 +1,7 @@
 /* Color variables */
+/* App.css */
+
+/* Define color variables */
 :root {
   --primary-color: #333333; /* Charcoal */
   --secondary-color: #ffffff; /* White */
@@ -7,34 +10,52 @@
   --text-color: #222222; /* Almost Black */
 }
 
+/* Global Styles */
 body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
   background-color: var(--primary-color);
-  color: #ffffff;
+  color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 header nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 header nav ul li {
   display: inline;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 header nav ul li a {
-  color: #ffffff;
+  color: var(--secondary-color);
   text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: var(--accent-color);
 }
 
 main {
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h1, h2, h3 {
@@ -42,16 +63,55 @@ h1, h2, h3 {
 }
 
 a {
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 a:hover {
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 
 footer {
   background-color: var(--primary-color);
-  color: #ffffff;
+  color: var(--secondary-color);
   text-align: center;
   padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Utility Classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.project {
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: var(--secondary-color);
+}
+
+.project h3 {
+  color: var(--primary-color);
+}
+
+.project a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  header nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
