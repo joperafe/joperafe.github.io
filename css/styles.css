@@ -1,9 +1,9 @@
 /* Color variables */
 :root {
-  --primary-color: #003366; /* Dark Blue */
-  --secondary-color: #0066cc; /* Bright Blue */
-  --accent-color: #ff6600; /* Orange */
-  --background-color: #f4f4f4; /* Light Gray */
+  --primary-color: #4a90e2; /* Bright Blue */
+  --secondary-color: #50e3c2; /* Teal */
+  --accent-color: #f5a623; /* Orange */
+  --background-color: #ffffff; /* White */
   --text-color: #333333; /* Dark Gray */
 }
 
